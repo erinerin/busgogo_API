@@ -3,7 +3,7 @@ require 'sinatra/namespace'
 require 'busgogo'
 require 'json'
 
-class bus123 < sinatra::base
+class bus < sinatra::base
 	register sinatra::namespace
 
 
@@ -14,9 +14,6 @@ helpers do
 		}
 	end
 end
-
-
-
 
 
 end
