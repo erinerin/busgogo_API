@@ -3,7 +3,7 @@ require 'sinatra/namespace'
 require 'busgogo'
 require 'json'
 
-class bus < sinatra::base
+class Bus < sinatra::base
 	register sinatra::namespace
 
 
