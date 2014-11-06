@@ -3,6 +3,11 @@ GEM
   specs:
     backports (3.6.3)
     busgogo (0.1.0)
+    em-websocket (0.5.1)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0.6.0)
+    eventmachine (1.0.3-java)
+    http_parser.rb (0.6.0-java)
     json (1.8.1-java)
     multi_json (1.10.1)
     rack (1.5.2)
@@ -28,6 +33,7 @@ PLATFORMS
 
 DEPENDENCIES
   busgogo
+  em-websocket
   json
   sinatra
   sinatra-contrib

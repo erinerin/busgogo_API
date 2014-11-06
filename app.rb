@@ -1,11 +1,14 @@
+
 require 'sinatra/base'
+require 'bundler'
 require 'sinatra/namespace'
+require 'logger'
 require 'busgogo'
 require 'json'
 
-class Bus < sinatra::base
-	register sinatra::namespace
 
+class Bus < Sinatra::Sase
+	register Sinatra::Namespace
 
 helpers do
 	def station
@@ -14,7 +17,5 @@ helpers do
 		}
 	end
 end
-
-
 end
 
