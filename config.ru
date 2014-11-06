@@ -1,2 +1,2 @@
-require './app.rb'
-run bus123
+require 'app.rb'
+run Bus

@@ -1,23 +1,32 @@
-require 'sinatra/base'
-require 'sinatra/namespace'
-require 'busgogo'
+require 'sinatra'
+require 'BusGogo'
+require 'scraper'
 require 'json'
 
-class bus123 < sinatra::base
-	register sinatra::namespace
-
-
+class Bus < Sinatra::Base
+	
 helpers do
-	def station
-		budges_after = {
-			'station' => station
-		}
+	def get_profile(station)
+        	scmachine = WebScraper.new
+			bus_station=scmachine.busstation
+			profile_after={
+ 			'name' => station,
+			'profiles' => []
+			}
+			name = params[:station]
+			bus_station.profile(name)[0].each do |value|
+			profile_after['profiles'].push('sta' => value)
+			end
+ 			profile_after
+        
 	end
 end
 
+get '/api/v1/player/:station.json' do
+content_type :json
+get_profile(params[:station]).to_json
 
 
-
-
+end
 end
 
