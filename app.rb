@@ -1,6 +1,5 @@
 require 'sinatra'
-require 'BusGogo'
-require 'scraper'
+require 'busgogo'
 require 'json'
 
 class Bus < Sinatra::Base
@@ -9,10 +8,12 @@ helpers do
 	def get_profile(station)
         	scmachine = WebScraper.new
 			bus_station=scmachine.busstation
+
 			profile_after={
  			'name' => station,
 			'profiles' => []
 			}
+
 			name = params[:station]
 			bus_station.profile(name)[0].each do |value|
 			profile_after['profiles'].push('sta' => value)
