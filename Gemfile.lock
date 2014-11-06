@@ -6,11 +6,16 @@ GEM
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
+<<<<<<< HEAD
     eventmachine (1.0.3)
     eventmachine (1.0.3-java)
     http_parser.rb (0.6.0)
     http_parser.rb (0.6.0-java)
     json (1.8.1)
+=======
+    eventmachine (1.0.3-java)
+    http_parser.rb (0.6.0-java)
+>>>>>>> 3624d67d343a338d68cb1b63dbea4009dc7414d3
     json (1.8.1-java)
     multi_json (1.10.1)
     rack (1.5.2)
@@ -33,7 +38,10 @@ GEM
 
 PLATFORMS
   java
+<<<<<<< HEAD
   ruby
+=======
+>>>>>>> 3624d67d343a338d68cb1b63dbea4009dc7414d3
 
 DEPENDENCIES
   busgogo
