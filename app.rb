@@ -31,7 +31,7 @@ get_profile(params[:station]).to_json
 end
 
 get '/' do
-'Simplecadet api/v1 is up and working'
+'ok'
 end
 
 end
