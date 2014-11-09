@@ -14,9 +14,9 @@ helpers do
 			'profiles' => []
 			}
 
-			name = params[:station]
 			scmachine.busstation.each do |value|
-			@profile_after['profiles'].push('sta' => value)
+			profile_after['profiles'].push('sta' => value)
+
 			end
  			@profile_after
         
@@ -26,8 +26,6 @@ end
 get '/api/v1/station/:station.json' do
 	content_type :json
 	get_profile(params[:station]).to_json
-
-
 end
 
 get '/' do
