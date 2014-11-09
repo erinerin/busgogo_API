@@ -9,7 +9,7 @@ helpers do
         	scmachine = WebScraper.new
 			
 
-			@profile_after={
+			profile_after={
  			'name' => station,
 			'profiles' => []
 			}
@@ -18,7 +18,7 @@ helpers do
 			profile_after['profiles'].push('sta' => value)
 
 			end
- 			@profile_after
+ 			profile_after
         
 	end
 end
