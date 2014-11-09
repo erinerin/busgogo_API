@@ -9,16 +9,21 @@ helpers do
         	scmachine = WebScraper.new
 			
 
-			profile_after={
+			@profile_after={
  			'name' => station,
 			'profiles' => []
 			}
 
 			name = params[:station]
+<<<<<<< HEAD
 			scmachine.busstation.each do |value|
 			profile_after['profiles'].push('sta' => value)
+=======
+			bus_station.profile(name)[0].each do |value|
+			@profile_after['profiles'].push('sta' => value)
+>>>>>>> 27efc296cd9ef604f1ed4cb04ee892cc52769ec4
 			end
- 			profile_after
+ 			@profile_after
         
 	end
 
@@ -72,6 +77,12 @@ check_station(station, profiles).to_json
 
 end
 
+<<<<<<< HEAD
+=======
+get '/' do
+'Simplecadet api/v1 is up and working'
+end
+>>>>>>> 27efc296cd9ef604f1ed4cb04ee892cc52769ec4
 
 end
 
