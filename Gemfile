@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'sinatra'
-gem 'busgogo'
+# gem 'busgogo'
 gem 'json'
 
 group :test   do
