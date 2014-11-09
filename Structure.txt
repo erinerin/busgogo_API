@@ -1,0 +1,542 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>新竹客運</title>
+<style type="text/css">
+<!--
+body {
+	background-image: url(images/2-1.gif);
+	margin-left: 0px;
+	margin-top: 0px;
+}
+-->
+</style>
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<link href="css/yafen-style.css" rel="stylesheet" type="text/css">
+<link href="css/news.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onload="MM_preloadImages('images/index/over_03.gif','images/index/over_04.gif','images/index/over_05.gif','images/index/over_06.gif','images/index/over_07.gif','images/index/over_08.gif')">
+<table width="996" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top"><object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="996" height="324">
+      <param name="movie" value="swf/01.swf">
+      <param name="quality" value="high">
+      <param name="wmode" value="opaque">
+      <param name="swfversion" value="8.0.35.0">
+      <!-- 此 param 標籤會提示使用 Flash Player 6.0 r65 和更新版本的使用者下載最新版本的 Flash Player。如果您不想讓使用者看到這項提示，請將其刪除。 -->
+      <param name="expressinstall" value="Scripts/expressInstall.swf">
+      <!-- 下一個物件標籤僅供非 IE 瀏覽器使用。因此，請使用 IECC 將其自 IE 隱藏。 -->
+      <!--[if !IE]>-->
+      <object type="application/x-shockwave-flash" data="swf/01.swf" width="996" height="324">
+        <!--<![endif]-->
+        <param name="quality" value="high">
+        <param name="wmode" value="opaque">
+        <param name="swfversion" value="8.0.35.0">
+        <param name="expressinstall" value="Scripts/expressInstall.swf">
+        <!-- 瀏覽器會為使用 Flash Player 6.0 和更早版本的使用者顯示下列替代內容。 -->
+        <div>
+          <h4>這個頁面上的內容需要較新版本的 Adobe Flash Player。</h4>
+          <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="取得 Adobe Flash Player" width="112" height="33"></a></p>
+        </div>
+        <!--[if !IE]>-->
+      </object>
+      <!--<![endif]-->
+    </object></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><table width="996" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="86" align="left" valign="top"><img src="images/index/index_02.gif" width="86" height="55"></td>
+        <td width="156" align="left" valign="top"><a href="big5/about.asp" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','images/index/over_03.gif',1)"><img src="images/index/index_03.gif" alt="關於竹客" name="Image3" width="156" height="55" border="0" id="Image3"></a></td>
+        <td width="126" align="left" valign="top"><a href="big5/information.asp" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','images/index/over_04.gif',1)"><img src="images/index/index_04.gif" alt="乘車資訊" name="Image4" width="126" height="55" border="0" id="Image4"></a></td>
+        <td width="127" align="left" valign="top"><a href="big5/service.asp" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image5','','images/index/over_05.gif',1)"><img src="images/index/index_05.gif" alt="服務據點" name="Image5" width="127" height="55" border="0" id="Image5"></a></td>
+        <td width="125" align="left" valign="top"><a href="big5/hire.asp" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image6','','images/index/over_06.gif',1)"><img src="images/index/index_06.gif" alt="招租訊息" name="Image6" width="125" height="55" border="0" id="Image6"></a></td>
+        <td width="126" align="left" valign="top"><a href="big5/job.asp" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image7','','images/index/over_07.gif',1)"><img src="images/index/index_07.gif" alt="人才招募" name="Image7" width="126" height="55" border="0" id="Image7"></a></td>
+        <td width="76" align="left" valign="top"><a href="big5/contact.asp" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image8','','images/index/over_08.gif',1)"><img src="images/index/index_08.gif" alt="與我聯絡" name="Image8" width="181" height="55" border="0" id="Image8"></a></td>
+        <td width="174" align="left" valign="top"><img src="images/index/index_09.gif" width="69" height="55"></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><img src="images/index/index_10.gif" width="996" height="27"></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" bgcolor="#FFFFFF"><table width="996" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="87" align="left" valign="top"><img src="images/index/index_11.gif" alt="" width="87" height="179"></td>
+        <td width="154" align="left" valign="top"><table width="154" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left" valign="top"><a href="big5/ic.asp"><img src="images/index/index_12.gif" alt="IC票證服務" width="154" height="43" border="0"></a></td>
+          </tr>
+          <tr>
+            <td height="9" align="left" valign="top"></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top"><a href="big5/Business.asp"><img src="images/index/index_24.gif" alt="大客車租賃業務" width="154" height="43" border="0"></a></td>
+          </tr>
+          <tr>
+            <td height="9" align="left" valign="top"></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top"><a href="big5/check.asp"><img src="images/index/index_28.gif" alt="對外大小車輛維修檢驗服務" width="154" height="43" border="0"></a></td>
+          </tr>
+          <tr>
+            <td height="9" align="left" valign="top"></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top"><a href="big5/activite.asp"><img src="images/index/index_35.gif" alt="活動專區" width="154" height="43" border="0"></a></td>
+          </tr>
+          
+		  <tr>
+            <td height="9" align="left" valign="top"></td>
+          </tr>
+		  <tr>
+            <td align="left" valign="top">
+			<a href="http://www.hcbus.com.tw/inquery/" target="_blank">
+			<img src="upload/LeftCom/5.gif" alt="" width="154" border="0">
+			</a>
+			</td>
+          </tr>
+		  
+		  <tr>
+            <td height="9" align="left" valign="top"></td>
+          </tr>
+		  <tr>
+            <td align="left" valign="top">
+			<a href="http://www.hcbus.com.tw/big5/information-4.asp" target="_blank">
+			<img src="upload/LeftCom/3.gif" alt="" width="154" border="0">
+			</a>
+			</td>
+          </tr>
+		  
+		  <tr>
+            <td height="9" align="left" valign="top"></td>
+          </tr>
+		  <tr>
+            <td align="left" valign="top">
+			<a href="http://blog.xuite.net/an135843/twblog" target="_blank">
+			<img src="upload/LeftCom/4.jpg" alt="" width="154" border="0">
+			</a>
+			</td>
+          </tr>
+		  
+        </table></td>
+        <td width="59" align="left" valign="top"> </td>
+        <td width="466" align="left" valign="top"><table width="466" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left" valign="top"><img src="images/index/index_14.gif" alt="最新消息" width="466" height="40" border="0" usemap="#Map"></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top"><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+			
+              <tr>
+                <td align="left" valign="top"><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="5%" align="center" valign="middle"><img src="images/icon_24.gif" alt="" width="7" height="6"></td>
+                        <td width="19%" align="left" valign="top" class="news_date">2014/10/8</td>
+                        <td width="60%" align="left" valign="top"><a href="big5/news_in.asp?id=125&amp;page=">(中壢永樂路改道)配合「臺灣桃園機場...</a></td>
+                        <td width="16%" align="left" valign="top"><img src="images/icon_21.gif" alt="" width="28" height="10"></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><img src="images/line.gif" alt="" width="418" height="13"></td>
+                  </tr>
+                </table></td>
+              </tr>
+            
+              <tr>
+                <td align="left" valign="top"><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="5%" align="center" valign="middle"><img src="images/icon_24.gif" alt="" width="7" height="6"></td>
+                        <td width="19%" align="left" valign="top" class="news_date">2014/9/30</td>
+                        <td width="60%" align="left" valign="top"><a href="big5/news_in.asp?id=121&amp;page=">自103年10月1日起快捷5號公車繞...</a></td>
+                        <td width="16%" align="left" valign="top"><img src="images/icon_21.gif" alt="" width="28" height="10"></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><img src="images/line.gif" alt="" width="418" height="13"></td>
+                  </tr>
+                </table></td>
+              </tr>
+            
+              <tr>
+                <td align="left" valign="top"><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="5%" align="center" valign="middle"><img src="images/icon_24.gif" alt="" width="7" height="6"></td>
+                        <td width="19%" align="left" valign="top" class="news_date">2014/9/27</td>
+                        <td width="60%" align="left" valign="top"><a href="big5/news_in.asp?id=120&amp;page=">103年10月1日起辦理55、55區...</a></td>
+                        <td width="16%" align="left" valign="top"><img src="images/icon_21.gif" alt="" width="28" height="10"></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><img src="images/line.gif" alt="" width="418" height="13"></td>
+                  </tr>
+                </table></td>
+              </tr>
+            
+              <tr>
+                <td align="left" valign="top"><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="5%" align="center" valign="middle"><img src="images/icon_24.gif" alt="" width="7" height="6"></td>
+                        <td width="19%" align="left" valign="top" class="news_date">2014/9/25</td>
+                        <td width="60%" align="left" valign="top"><a href="big5/news_in.asp?id=122&amp;page=">自103.10.1起新竹縣快捷5號公...</a></td>
+                        <td width="16%" align="left" valign="top"><img src="images/icon_21.gif" alt="" width="28" height="10"></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><img src="images/line.gif" alt="" width="418" height="13"></td>
+                  </tr>
+                </table></td>
+              </tr>
+            
+              <tr>
+                <td align="left" valign="top"><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="5%" align="center" valign="middle"><img src="images/icon_24.gif" alt="" width="7" height="6"></td>
+                        <td width="19%" align="left" valign="top" class="news_date">2014/9/12</td>
+                        <td width="60%" align="left" valign="top"><a href="big5/news_in.asp?id=117&amp;page=">103.9.14起【9010 新竹-...</a></td>
+                        <td width="16%" align="left" valign="top"><img src="images/icon_21.gif" alt="" width="28" height="10"></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><img src="images/line.gif" alt="" width="418" height="13"></td>
+                  </tr>
+                </table></td>
+              </tr>
+            
+              <tr>
+                <td align="left" valign="top"><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="5%" align="center" valign="middle"><img src="images/icon_24.gif" alt="" width="7" height="6"></td>
+                        <td width="19%" align="left" valign="top" class="news_date">2014/9/12</td>
+                        <td width="60%" align="left" valign="top"><a href="big5/news_in.asp?id=116&amp;page=">103.9.15起新竹市免費公車-7...</a></td>
+                        <td width="16%" align="left" valign="top"><img src="images/icon_21.gif" alt="" width="28" height="10"></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><img src="images/line.gif" alt="" width="418" height="13"></td>
+                  </tr>
+                </table></td>
+              </tr>
+            			
+            </table></td>
+          </tr>
+          <tr>
+            <td align="left" valign="top"><img src="images/index/index_34.gif" alt="失物招領" width="466" height="49" border="0" usemap="#Map2"></td>
+          </tr>
+          <tr>
+            <td align="center" valign="top"><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+			
+              <tr>
+                <td align="left" valign="top"><table width="95%" border="0" align="left" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="5%" align="center" valign="middle"><img src="images/icon_24.gif" alt="" width="7" height="6"></td>
+                        <td width="19%" align="left" valign="top" class="news_date">2014/10/12</td>
+                        <td width="60%" align="left" valign="top"><a href="big5/lost.asp">拾擭錢包</a></td>
+                        <td width="16%" align="left" valign="top"><img src="images/icon_21.gif" alt="" width="28" height="10"></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><img src="images/line.gif" alt="" width="418" height="13"></td>
+                  </tr>
+                </table></td>
+              </tr>
+			
+              <tr>
+                <td align="left" valign="top"><table width="95%" border="0" align="left" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="5%" align="center" valign="middle"><img src="images/icon_24.gif" alt="" width="7" height="6"></td>
+                        <td width="19%" align="left" valign="top" class="news_date">2014/9/29</td>
+                        <td width="60%" align="left" valign="top"><a href="big5/lost.asp">拾擭皮夾(咖啡色)</a></td>
+                        <td width="16%" align="left" valign="top"><img src="images/icon_21.gif" alt="" width="28" height="10"></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><img src="images/line.gif" alt="" width="418" height="13"></td>
+                  </tr>
+                </table></td>
+              </tr>
+			
+              <tr>
+                <td align="left" valign="top"><table width="95%" border="0" align="left" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="5%" align="center" valign="middle"><img src="images/icon_24.gif" alt="" width="7" height="6"></td>
+                        <td width="19%" align="left" valign="top" class="news_date">2014/9/26</td>
+                        <td width="60%" align="left" valign="top"><a href="big5/lost.asp">拾擭小布包</a></td>
+                        <td width="16%" align="left" valign="top"><img src="images/icon_21.gif" alt="" width="28" height="10"></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><img src="images/line.gif" alt="" width="418" height="13"></td>
+                  </tr>
+                </table></td>
+              </tr>
+			
+              <tr>
+                <td align="left" valign="top"><table width="95%" border="0" align="left" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="5%" align="center" valign="middle"><img src="images/icon_24.gif" alt="" width="7" height="6"></td>
+                        <td width="19%" align="left" valign="top" class="news_date">2014/9/24</td>
+                        <td width="60%" align="left" valign="top"><a href="big5/lost.asp">拾擭手提包(土黃色)</a></td>
+                        <td width="16%" align="left" valign="top"><img src="images/icon_21.gif" alt="" width="28" height="10"></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><img src="images/line.gif" alt="" width="418" height="13"></td>
+                  </tr>
+                </table></td>
+              </tr>
+			
+              <tr>
+                <td align="left" valign="top"><table width="95%" border="0" align="left" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="5%" align="center" valign="middle"><img src="images/icon_24.gif" alt="" width="7" height="6"></td>
+                        <td width="19%" align="left" valign="top" class="news_date">2014/9/8</td>
+                        <td width="60%" align="left" valign="top"><a href="big5/lost.asp">拾擭錢包</a></td>
+                        <td width="16%" align="left" valign="top"><img src="images/icon_21.gif" alt="" width="28" height="10"></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><img src="images/line.gif" alt="" width="418" height="13"></td>
+                  </tr>
+                </table></td>
+              </tr>
+			
+              <tr>
+                <td align="left" valign="top"><table width="95%" border="0" align="left" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="5%" align="center" valign="middle"><img src="images/icon_24.gif" alt="" width="7" height="6"></td>
+                        <td width="19%" align="left" valign="top" class="news_date">2014/9/8</td>
+                        <td width="60%" align="left" valign="top"><a href="big5/lost.asp">拾擭NOKLA手機</a></td>
+                        <td width="16%" align="left" valign="top"><img src="images/icon_21.gif" alt="" width="28" height="10"></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><img src="images/line.gif" alt="" width="418" height="13"></td>
+                  </tr>
+                </table></td>
+              </tr>
+			
+            </table></td>
+          </tr>
+        </table></td>
+        <td width="154" align="left" valign="top"><table width="154" border="0" cellspacing="0" cellpadding="0">
+		
+          <tr>
+            <td align="left" valign="top">
+			<a href="http://www.twnsc.com.tw/" target="_blank">
+			<img src="upload/RightCOm/1.gif" alt="" width="154" height="47" border="0">
+			</a>
+			</td>
+          </tr>
+          <tr>
+            <td height="9" align="left" valign="top"></td>
+          </tr>
+        
+          <tr>
+            <td align="left" valign="top">
+			<a href="http://www.taiwanbus.tw/Default.aspx" target="_blank">
+			<img src="upload/RightCOm/2.gif" alt="" width="154" height="47" border="0">
+			</a>
+			</td>
+          </tr>
+          <tr>
+            <td height="9" align="left" valign="top"></td>
+          </tr>
+        
+          <tr>
+            <td align="left" valign="top">
+			<a href="http://www.fwtravel.com.tw/" target="_blank">
+			<img src="upload/RightCOm/3.gif" alt="" width="154" height="47" border="0">
+			</a>
+			</td>
+          </tr>
+          <tr>
+            <td height="9" align="left" valign="top"></td>
+          </tr>
+        
+          <tr>
+            <td align="left" valign="top">
+			<a href="http://hcbustds.com.tw/" target="_blank">
+			<img src="upload/RightCOm/4.gif" alt="" width="154" height="47" border="0">
+			</a>
+			</td>
+          </tr>
+          <tr>
+            <td height="9" align="left" valign="top"></td>
+          </tr>
+        
+          <tr>
+            <td align="left" valign="top">
+			<a href="http://www.hcbus.com.tw/tour.htm" target="_blank">
+			<img src="upload/RightCOm/10.png" alt="" width="154" height="47" border="0">
+			</a>
+			</td>
+          </tr>
+          <tr>
+            <td height="9" align="left" valign="top"></td>
+          </tr>
+        
+          <tr>
+            <td align="left" valign="top">
+			<a href="http://web.hsinchu.gov.tw/tourism/" target="_blank">
+			<img src="upload/RightCOm/8.jpg" alt="" width="154" height="47" border="0">
+			</a>
+			</td>
+          </tr>
+          <tr>
+            <td height="9" align="left" valign="top"></td>
+          </tr>
+        
+          <tr>
+            <td align="left" valign="top">
+			<a href="http://dep-tourism.hccg.gov.tw/web/Home" target="_blank">
+			<img src="upload/RightCOm/7.jpg" alt="" width="154" height="47" border="0">
+			</a>
+			</td>
+          </tr>
+          <tr>
+            <td height="9" align="left" valign="top"></td>
+          </tr>
+        
+          <tr>
+            <td align="left" valign="top">
+			<a href="http://www.hcbus.com.tw/modify/%E6%80%A7%E9%A8%B7%E6%93%BE%E9%98%B2%E6%B2%BB%E6%8E%AA%E6%96%BD%E8%BE%A6%E6%B3%95%E5%BC%B5%E8%B2%BC%E7%B6%B2%E7%AB%99(103.9.1).doc" target="_blank">
+			<img src="upload/RightCOm/11.png" alt="" width="154" height="47" border="0">
+			</a>
+			</td>
+          </tr>
+          <tr>
+            <td height="9" align="left" valign="top"></td>
+          </tr>
+        
+          <tr>
+            <td align="left" valign="top">
+			<a href="https://www.youtube.com/watch?v=uz9RJzl3hYs" target="_blank">
+			<img src="upload/RightCOm/9.gif" alt="" width="154" height="47" border="0">
+			</a>
+			</td>
+          </tr>
+          <tr>
+            <td height="9" align="left" valign="top"></td>
+          </tr>
+        
+          <tr>
+            <td align="left" valign="top">
+			<a href="http://www.railway.gov.tw/tw/" target="_blank">
+			<img src="upload/RightCOm/5.gif" alt="" width="154" height="47" border="0">
+			</a>
+			</td>
+          </tr>
+          <tr>
+            <td height="9" align="left" valign="top"></td>
+          </tr>
+        
+          <tr>
+            <td align="left" valign="top">
+			<a href="http://www.thsrc.com.tw" target="_blank">
+			<img src="upload/RightCOm/6.gif" alt="" width="154" height="47" border="0">
+			</a>
+			</td>
+          </tr>
+          <tr>
+            <td height="9" align="left" valign="top"></td>
+          </tr>
+        		
+        </table></td>
+        <td width="89" align="left" valign="top"><img src="images/index/index_16.gif" alt="" width="89" height="152"></td>
+      </tr>
+    </table></td>
+  </tr>
+  
+<tr>
+    <td height="65" align="center" valign="middle" bgcolor="#F3F3F3"><table width="80%" border="0">
+      <tr>
+        <td height="25" align="center" valign="middle">地址：新竹市民族路16-1號                 TEL:03-5225151~8                 FAX:03-5257450<br>
+</td>
+      </tr>
+      <tr>
+        <td height="25" align="center" valign="middle">本站圖文係新竹汽車客運股份有限公司版權所有‧盜用必究  IE8.0獲得最佳瀏覽效果</td>
+      </tr>
+    </table></td>
+  </tr>
+ 
+</table>
+
+<map name="Map" id="Map">
+  <area shape="rect" coords="380,3,433,26" href="big5/news.asp">
+</map>
+
+<map name="Map2" id="Map2">
+  <area shape="rect" coords="382,16,426,39" href="big5/lost.asp">
+</map>
+<script type="text/javascript">
+<!--
+swfobject.registerObject("FlashID");
+//-->
+</script>
+</body>
+</html>

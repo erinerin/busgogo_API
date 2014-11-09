@@ -24,8 +24,8 @@ helpers do
 end
 
 get '/api/v1/station/:station.json' do
-content_type :json
-get_profile(params[:station]).to_json
+	content_type :json
+	get_profile(params[:station]).to_json
 
 
 end
