@@ -7,7 +7,6 @@ class Bus < Sinatra::Base
 helpers do
 	def get_profile(station)
         	scmachine = WebScraper.new
-			
 
 			@profile_after={
  			'name' => station,
@@ -15,34 +14,15 @@ helpers do
 			}
 
 			name = params[:station]
-<<<<<<< HEAD
+
 			scmachine.busstation.each do |value|
 			profile_after['profiles'].push('sta' => value)
-=======
-			bus_station.profile(name)[0].each do |value|
-			@profile_after['profiles'].push('sta' => value)
->>>>>>> 27efc296cd9ef604f1ed4cb04ee892cc52769ec4
+
 			end
  			@profile_after
-        
 	end
 
-	def get_data
-        	scmachine = WebScraper.new
-			
 
-			profile_after={
- 			'name' => station,
-			'profiles' => []
-			}
-
-			
-			scmachine.tmp_selectstation.each do |value|
-			profile_after['profiles'].push('sta' => value)
-			end
- 			profile_after
-        
-	end
 
 	def check_station(station,profiles)
 		@check_station={}
@@ -77,12 +57,11 @@ check_station(station, profiles).to_json
 
 end
 
-<<<<<<< HEAD
-=======
 get '/' do
 'Simplecadet api/v1 is up and working'
 end
->>>>>>> 27efc296cd9ef604f1ed4cb04ee892cc52769ec4
+
+
 
 end
 
