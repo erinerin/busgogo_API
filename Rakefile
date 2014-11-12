@@ -1,5 +1,5 @@
 require 'rake/testtask'
-
+require 'sinatra/activerecord/rake'
 task :default => :spec
 
 desc "Run all tests"
