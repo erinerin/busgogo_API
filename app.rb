@@ -1,16 +1,21 @@
 require 'sinatra/base'
 require 'busgogo'
 require 'json'
+require './tutorial'
 
 class Bus < Sinatra::Base
-	
+
+		configure :production, :development do
+		enable :logging
+		end
+
 helpers do
 	def get_profile(station)
         	scmachine = WebScraper.new
 			
 
 			profile_after={
- 			'name' => station,
+ 			'station' => station,
 			'profiles' => []
 			}
 
@@ -31,5 +36,38 @@ end
 get '/' do
 'ok'
 end
+
+post '/api/v1/tutorials' do
+content_type :json
+begin
+req = JSON.parse(request.body.read)
+logger.info req
+rescue
+halt 400
+end
+tutorial = Tutorial.new
+tutorial.num = req['num'].to_json
+tutorial.station = req['station'].to_json
+if tutorial.save
+status 201
+redirect "/api/v1/tutorials/#{tutorial.id}"
+end
+end
+
+
+
+ get '/api/v1/tutorials/:id' do
+ content_type :json
+  begin
+  @tutorial = Tutorial.find(params[:id])
+	num = JSON.parse(@tutorial.num)
+	station = JSON.parse(@tutorial.station)
+	logger.info({ num: num, station: station }.to_json)
+	rescue
+	halt 400
+		end
+  end
+
+
 
 end
