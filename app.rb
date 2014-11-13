@@ -20,7 +20,7 @@ helpers do
 			}
 
 			scmachine.busstation.each do |value|
-			profile_after['profiles'].push('sta' => value)
+			profile_after['profiles'].push('station' => value)
 
 			end
  			profile_after
@@ -36,6 +36,10 @@ end
 get '/' do
 'ok'
 end
+
+  #get '/api/v1/tutorials' do
+   # "Hello World"
+  #end
 
 post '/api/v1/tutorials' do
 content_type :json
