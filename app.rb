@@ -48,7 +48,8 @@ req = JSON.parse(request.body.read)
 logger.info req
 rescue
 halt 400
-end
+endTables:      0
+
 tutorial = Tutorial.new
 tutorial.num = req['num'].to_json
 tutorial.station = req['station'].to_json
@@ -76,3 +77,4 @@ end
 	end
 
 end
+
