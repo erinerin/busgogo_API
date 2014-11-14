@@ -12,7 +12,7 @@ class Bus < Sinatra::Base
 helpers do
 	def get_profile(station)
         	scmachine = WebScraper.new
-			
+
 
 			profile_after={
  			'station' => station,
@@ -24,7 +24,7 @@ helpers do
 
 			end
  			profile_after
-        
+
 	end
 end
 
@@ -60,18 +60,19 @@ end
 
 
 
- get '/api/v1/tutorials/:id' do
- content_type :json
-  begin
-  @tutorial = Tutorial.find(params[:id])
-	num = JSON.parse(@tutorial.num)
-	station = JSON.parse(@tutorial.station)
-	logger.info({ num: num, station: station }.to_json)
-	rescue
-	halt 400
+	get '/api/v1/tutorials/:id' do
+	 	content_type :json, 'charset' => 'utf-8'
+
+	  begin
+		  @tutorial = Tutorial.find(params[:id])
+			num = @tutorial.num
+			station = @tutorial.station
+			result = { num: num, station: station }.to_json
+			logger.info("Found: #{result}")
+			result
+		rescue
+			halt 400
 		end
-  end
-
-
+	end
 
 end
