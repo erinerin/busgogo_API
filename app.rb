@@ -48,7 +48,7 @@ req = JSON.parse(request.body.read)
 logger.info req
 rescue
 halt 400
-endTables:      0
+endTables 0
 
 tutorial = Tutorial.new
 tutorial.num = req['num'].to_json
@@ -76,5 +76,6 @@ end
 		end
 	end
 
+end
 end
 
