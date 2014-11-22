@@ -58,7 +58,7 @@ if tutorial.save
 status 201
 redirect "/api/v1/tutorials/#{tutorial.id}"
 end
-# end
+end
 
 
 
@@ -78,5 +78,5 @@ end
 	end
 
 end
-end
+# end
 
