@@ -49,7 +49,7 @@ logger.info req
 rescue
 halt 400
 end
-Tables 0
+# Tables 0
 
 tutorial = Tutorial.new
 tutorial.num = req['num'].to_json
