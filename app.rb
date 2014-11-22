@@ -48,7 +48,8 @@ req = JSON.parse(request.body.read)
 logger.info req
 rescue
 halt 400
-endTables 0
+end
+Tables 0
 
 tutorial = Tutorial.new
 tutorial.num = req['num'].to_json
@@ -57,7 +58,7 @@ if tutorial.save
 status 201
 redirect "/api/v1/tutorials/#{tutorial.id}"
 end
-end
+# end
 
 
 
