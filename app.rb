@@ -64,8 +64,8 @@ end
 	 	content_type :json, 'charset' => 'utf-8'
 
 	  begin
-	  	puts"hi"
-		  @tutorial = Tutorial.find(params[:id])
+	  	
+		 	@tutorial = Tutorial.find(params[:id])
 			num = @tutorial.num
 			station = @tutorial.station
 			result = { num: num, station: station }.to_json
