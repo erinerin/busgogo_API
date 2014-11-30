@@ -1,5 +1,5 @@
 require 'sinatra'
 require 'sinatra/activerecord'
-require './environments'
+require './config/environments'
 class Tutorial < ActiveRecord::Base
 end

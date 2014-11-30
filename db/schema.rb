@@ -11,12 +11,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141122100135) do
-
-  create_table "tutorials", force: true do |t|
-    t.text     "num"
-    t.text     "station"
-    t.datetime "time"
-  end
+ActiveRecord::Schema.define(version: 20141130133622) do
 
 end

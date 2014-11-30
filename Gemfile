@@ -6,6 +6,8 @@ gem 'busgogo'
 gem 'json'
 gem 'activerecord'
 gem 'sinatra-activerecord'
+gem 'haml'
+gem 'sinatra-flash'
 
 group :development do
 gem 'sqlite3'
