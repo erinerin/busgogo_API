@@ -11,9 +11,15 @@
         %tr
           %th num
           %th station
-        -@station['badge'].each do |badge|
-          %tr
-            %td
-              = badge['num']
-            %td{width: '300'}
-              = badge['station']
+        %tr
+          %td
+            =@station['station']
+          %td
+            =@station['profiles']
+
+        / -@station['badge'].each do |badge|
+        /   %tr
+        /     %td
+        /       = badge['num']
+        /     %td{width: '300'}
+        /       = badge['station']

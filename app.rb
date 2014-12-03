@@ -19,23 +19,28 @@ class Bus < Sinatra::Base
 
 	helpers do
 		def user
-			num = params[:num]
+			num = params[:num].to_i
 			# @station = user
 			return nil unless num
 
 			profile_after={
-		 		'station' => station,
-				'profiles' => []
+		 		'station' => num,
+				'profiles' => 'not yet found'
 			}
 
 			begin
-				WebScraper::Scraper.busstation.each do |value|
-						profile_after['profiles'].push('station' => value)
-				end
-				profile_after
+				# WebScraper::Scraper.busstation.each do |value|
+				# 		profile_after['profiles'].push('station' => value)
+				# end
+				# profile_after
+
+				buses = WebScraper.new
+				stations = buses.busstation
+				profile_after['profiles'] = stations[num]
 			rescue
-			nil
+				return nil
 			end
+			profile_after
 		end
 
 
@@ -85,19 +90,20 @@ class Bus < Sinatra::Base
 		@station = user
 		@num = params[:num]
 		if @num && @station.nil?
-			flash[:notice] = 'num not found' if @station.nil?
+			flash[:notice] = 'station number #{num} not found' if @station.nil?
 			redirect '/station'
 		end
-		
+		logger.info "num: #{@station['station']}  name: #{@station['profiles']}"
+
 		haml :station
 	end
 
 
 
-	get '/api/v1/station/:station.json' do
-		content_type :json
-		get_profile(params[:station]).to_json
-	end
+	# get '/api/v1/station/:station.json' do
+	# 	content_type :json
+	# 	get_profile(params[:station]).to_json
+	# end
 
 
 
@@ -126,18 +132,17 @@ class Bus < Sinatra::Base
 
 
 	get '/api/v1/tutorials/:id' do
-		"Hello World"
-	 # 	content_type :json, 'charset' => 'utf-8'
+	 	content_type :json, 'charset' => 'utf-8'
 
-	 #  begin
-		#   @tutorial = Tutorial.find(params[:id])
-		# 	num = @tutorial.num
-		# 	station = @tutorial.station
-		# 	result = { num: num, station: station }.to_json
-		# 	logger.info("Found: #{result}")
-		# 	result
-		# rescue
-		# 	halt 400
+	  begin
+		  @tutorial = Tutorial.find(params[:id])
+			num = @tutorial.num
+			station = @tutorial.station
+			result = { num: num, station: station }.to_json
+			logger.info("Found: #{result}")
+			result
+		rescue
+			halt 400
 		end
 	end
 
