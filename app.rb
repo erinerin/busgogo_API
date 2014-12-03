@@ -2,7 +2,7 @@ require 'sinatra/base'
 require 'busgogo'
 require 'json'
 require './tutorial'
-
+require 'bundler/setup'
 
 require 'haml'
 require 'sinatra/flash'
@@ -20,16 +20,17 @@ def user
 num = params[:num]
 return nil unless num
 profile_after={
- 			'station' => station,
-		'profiles' => []
+		'profiles' => 0
 			}
 begin
-WebScraper::Scraper.busstation.each do |value|
-		profile_after['profiles'].push('station' => value)
+s=WebScraper.new
+buses=s.busstation
+profile_after['profiles']=buses['num']
 end
+#logger.info request
 profile_after
 rescue
-nil
+return nil
 end
 end
 
@@ -88,7 +89,8 @@ end
 
 get '/api/v1/station/:station.json' do
 	content_type :json
-	get_profile(params[:station]).to_json
+	#get_profile(params[:station]).to_json
+   user.to_json
 end
 
 
