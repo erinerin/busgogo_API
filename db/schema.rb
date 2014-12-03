@@ -16,7 +16,8 @@ ActiveRecord::Schema.define(version: 20141112151315) do
   create_table "tutorials", force: true do |t|
     t.text     "num"
     t.text     "station"
-    t.datetime "time"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
