@@ -1,9 +1,11 @@
+#require 'bundler/setup'
 require 'sinatra/base'
 require 'busgogo'
 require 'json'
 require './tutorial'
-require 'bundler/setup'
 
+
+require 'bundler/setup'
 require 'haml'
 require 'sinatra/flash'
 
@@ -15,107 +17,114 @@ class Bus < Sinatra::Base
 		enable :logging
 		end
 
-helpers do
-def user
-num = params[:num]
-return nil unless num
-profile_after={
-		'profiles' => 0
+	helpers do
+		def user
+			num = params[:num].to_i
+			# @station = user
+			return nil unless num
+
+			profile_after={
+		 		'station' => num,
+				'profiles' => 'not yet found'
 			}
-begin
-s=WebScraper.new
-buses=s.busstation
-profile_after['profiles']=buses['num']
-end
-#logger.info request
-profile_after
-rescue
-return nil
-end
-end
 
- def current_page?(path = ' ')
-path_info = request.path_info
-path_info += ' ' if path_info == '/'
-request_path = path_info.split '/'
-request_path[1] == path
-end
-end
+			begin
+				# WebScraper::Scraper.busstation.each do |value|
+				# 		profile_after['profiles'].push('station' => value)
+				# end
+				# profile_after
 
-#	def get_profile(station)
-#        	scmachine = WebScraper.new
+				buses = WebScraper.new
+				stations = buses.busstation
+				profile_after['profiles'] = stations[num]
+			rescue
+				return nil
+			end
+			profile_after
+		end
 
 
-#			profile_after={
-# 			'station' => station,
-#			'profiles' => []
-#			}
+		def current_page?(path = ' ')
+			path_info = request.path_info
+			path_info += ' ' if path_info == '/'
+			request_path = path_info.split '/'
+			request_path[1] == path
+		end
+	end
 
-#			scmachine.busstation.each do |value|
-#			profile_after['profiles'].push('station' => value)
-
-#			end
-# 			profile_after
-
-#	end
-#end
+	# 	def get_profile(station)
+	#        	scmachine = WebScraper.new
 
 
-get '/' do
-haml :home
-end
+	# 			profile_after={
+	# 			'station' => station,
+	# 			'profiles' => []
+	# 			}
 
-get '/station' do
-@num = params[:num]
-if @num
-redirect "/station/#{@num}"
-return nil
-end
- haml :station
-end
+	# 			scmachine.busstation.each do |value|
+	# 			profile_after['profiles'].push('station' => value)
 
+	# 			end
+	# 			profile_after
 
- get '/station/:num' do
-@station = user
-@num = params[:num]
-if @num && @station.nil?
-flash[:notice] = 'num not found' if @station.nil?
-redirect '/station'
-end
-haml :station
-end
+	# 	end
+	# end
 
 
+	get '/' do
+		haml :home
+	end
 
-get '/api/v1/station/:station.json' do
-	content_type :json
-	#get_profile(params[:station]).to_json
-   user.to_json
-end
+	get '/station' do
+		@num = params[:num]
+		if @num
+			redirect "/station/#{@num}"
+			return nil
+		end
+
+	 	haml :station
+	end
+
+
+	get '/station/:num' do
+		@station = user
+		@num = params[:num]
+		if @num && @station.nil?
+			flash[:notice] = 'station number #{num} not found' if @station.nil?
+			redirect '/station'
+		end
+		logger.info "num: #{@station['station']}  name: #{@station['profiles']}"
+
+		haml :station
+	end
 
 
 
-  #get '/api/v1/tutorials' do
-    #"Hello World"
-  #end
+	# get '/api/v1/station/:station.json' do
+	# 	content_type :json
+	# 	get_profile(params[:station]).to_json
+	# end
 
-post '/api/v1/tutorials' do
-content_type :json
-begin
-req = JSON.parse(request.body.read)
-logger.info req
-rescue
-halt 400
-#endTables: 0
 
-tutorial = Tutorial.new
-tutorial.num = req['num'].to_json
-tutorial.station = req['station'].to_json
-if tutorial.save
-status 201
-redirect "/api/v1/tutorials/#{tutorial.id}"
-end
-end
+
+
+	post '/api/v1/tutorials' do
+		content_type :json
+			begin
+				req = JSON.parse(request.body.read)
+				logger.info req
+			rescue
+			halt 400
+		#endTables: 0
+
+			tutorial = Tutorial.new
+			tutorial.num = req['num'].to_json
+			tutorial.station = req['station'].to_json
+			if tutorial.save
+				status 201
+				redirect "/api/v1/tutorials/#{tutorial.id}"
+			end
+	end
 
 
 
